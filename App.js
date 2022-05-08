@@ -19,9 +19,11 @@ export default function App() {
       <NavigationContainer>
         <Drawer.Navigator initialRouteName="Home " drawerContent={(props) => <DrawerContent {...props} />}>
           <Drawer.Screen name="Home" component={Home} />
-          <Drawer.Screen name="Login" component={Login} options={{ swipeEnabled: false, drawerLabel: 'Login',  drawerLabel: () => null,
-        title: undefined,
-        drawerIcon: () => null, }} />
+          <Drawer.Screen name="Login" component={Login} options={{
+            swipeEnabled: false, drawerLabel: 'Login', drawerLabel: () => null,
+            title: undefined,
+            drawerIcon: () => null, headerShown: false
+          }} />
         </Drawer.Navigator>
       </NavigationContainer>
     </Provider>

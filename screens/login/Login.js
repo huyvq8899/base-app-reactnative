@@ -110,9 +110,7 @@ const removeValue = async () => {
 };
 /////////////
 export default function Login(props) {
-  navigationOptions = {
-    drawerLabel: () => null,
-  };
+
 
   //const API_URL = 'http:/192.168.1.172:45455/api/';
   const [expoPushToken, setExpoPushToken] = useState('');
